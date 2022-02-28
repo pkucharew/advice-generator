@@ -1,0 +1,109 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color:#202632;
+  padding:0 15px;
+}
+
+a {
+  color:hsl(193, 38%, 86%);
+}
+
+.container {
+  display:flex;
+  justify-items:center;
+  align-items:center;
+  height:100vh;
+}
+.card {
+  width:545px;
+  padding:20px;
+  position:relative;
+  margin:0 auto;
+  background-color: #313a49;
+  border-radius:10px;
+  text-align:center;
+}
+
+@media only screen and (min-width:1440px) {
+  .card {
+    padding:45px 45px 22.5px 45px;
+  }
+  .card .advice {
+    font-size:28px;
+    padding:25px 0;
+  }
+}
+
+.card .advice {
+  padding:15px 0;
+  font-size:24px;
+  font-weight:800;
+  color:hsl(193, 38%, 86%);
+}
+
+.card h3 {
+  font-size:12px;
+  letter-spacing:4px;
+  color:hsl(150, 100%, 66%);
+  text-transform:uppercase;
+}
+
+.card .quote {
+  display:flex;
+  width:100%;
+  font-size:48px;
+  color:hsl(193, 38%, 86%);
+}
+
+.card .quote:before,
+.card .quote:after { 
+  content:"";
+  flex-grow:1;
+  margin-top:20px;
+  /*display:block;*/
+  height:1px;
+  background:hsl(193, 38%, 86%);
+  width:45%;
+}
+
+.card .quote:before {
+  margin-right:15px;
+}
+
+.card .quote:after {
+  margin-left:15px;
+}
+
+.die {
+  position:absolute;
+  bottom:-30px;
+  margin-left:-32px;
+  width:65px;
+  height:65px;
+  border-radius:65px;
+  outline:0;
+  border:0;
+  background-color:hsl(150, 100%, 66%);
+  font-size:28px;
+  color:hsl(217, 19%, 24%);
+}
+
+.die:hover {
+  cursor:pointer;
+  transition: box-shadow .25s ease-in-out;
+   -moz-transition: box-shadow .25s ease-in-out;
+   -webkit-transition: box-shadow .25s ease-in-out;
+  -webkit-box-shadow:0px 0px 30px 10px rgba(83,249,166,0.9);
+  -moz-box-shadow: 0px 0px 30px 10px rgba(83,249,166,0.9);
+  box-shadow: 0px 0px 30px 10px rgba(83,249,166,0.9);
+}
+
+/* footer */
+
+.attribution {
+  margin-top:90px;
+  text-align:center;
+  font-size:12px;
+  font-weight:400;
+  color:#eee;
+}
